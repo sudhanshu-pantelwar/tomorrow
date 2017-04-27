@@ -1,0 +1,40 @@
+<!--
+  Generated template for the Login page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="danger">
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <form #loginForm="ngForm">
+    <ion-card style="margin-top: 10%; margin-bottom: 5%;">
+      <ion-item>
+        <ion-input name="email" type="email" placeholder="Email" [(ngModel)] = "email" required></ion-input>
+      </ion-item>
+
+      <hr>
+      <ion-item>
+        <ion-input name="password" type="password" placeholder="Password"  [(ngModel)] = "password" required></ion-input>
+      </ion-item>
+      
+    </ion-card>
+    
+    <ion-card color="primary" align="center">
+      <button ion-button clear (click)="login()"><font color="white">Log in</font></button>
+    </ion-card>
+    <ion-card color="primary" align="center">
+      <button ion-button clear (click)="register()"><font color="white">Register</font></button>
+    </ion-card>
+    <ion-card color="primary" align="center">
+      <button ion-button clear (click)="facebook()"><font color="white">Login with Facebook</font></button>
+    </ion-card>
+	</form>
+</ion-content>

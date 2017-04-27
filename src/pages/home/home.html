@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Profile</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Profile</h3>
+  <ion-card>
+    <img [src]="imgFromServer" *ngIf="imgFromServer"/>
+    <ion-item>Name: {{name}}</ion-item>
+    <ion-item>Address: {{address}}</ion-item>
+  </ion-card>
+</ion-content>
